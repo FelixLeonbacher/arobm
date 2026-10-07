@@ -1,0 +1,87 @@
+# ============================================
+# General-purpose .gitignore
+# Track source, docs, configs - ignore the rest
+# ============================================
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- OS junk ---
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Secrets / local env ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# --- Logs / temp ---
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.cache
+.cache/
+tmp/
+temp/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- C / C++ / CMake ---
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+*.out
+
+# --- ROS / colcon ---
+install/
+log/
+devel/
+
+# --- Node / JS ---
+node_modules/
+dist/
+.npm/
+
+# --- Java / Gradle ---
+*.class
+.gradle/
+target/
+
+# --- Archives / large binaries ---
+*.zip
+*.tar.gz
+*.rar
+*.7z
